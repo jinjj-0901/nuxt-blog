@@ -3,7 +3,7 @@ import { seoData } from './data'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-09-30',
-
+  ssr: true, // 静的サイトでもtrue（ページ事前生成のため）
   modules: [
     'nuxt-icon',
     '@nuxt/image',
@@ -45,6 +45,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: 'static', // ←これが一番重要！
     prerender: {
       crawlLinks: true,
       routes: ['/', '/rss.xml'],

@@ -1,0 +1,1 @@
+import{E as a,V as i,W as o,X as r}from"./BSSkYfSS.js";function u(e){const t=a({});return i(()=>{const s=o().$nuxtSiteConfig.get(r({resolveRefs:!0},e));Object.assign(t,s)}),delete t._priority,t}export{u};

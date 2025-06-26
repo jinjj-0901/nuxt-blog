@@ -45,7 +45,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'aws-lambda',
+    //preset: 'aws-lambda',
     prerender: {
       crawlLinks: true,
       routes: ['/', '/rss.xml'],
